@@ -20,7 +20,7 @@ async function getAllBuku(req, res, next) {
         let imageUrl = null;
         if (buku.imageId) {
           imageUrl = `${req.protocol}://${req.get("host")}/buku/image/${
-            buku.imageId
+            buku.id
           }`;
         }
 
